@@ -50,9 +50,15 @@ console.log(gk, fieldPlayers);
 const allPlayers = [...player1, ...player2];
 console.log(allPlayers);
 //4.
-const players1Final = [...players1, 'Thiago', 'Coutinho', 'Periscic'];
+const players1Final = [...player1, 'Thiago', 'Coutinho', 'Periscic'];
 console.log(players1Final);
 //5.
 const { odds: { team1, x: draw, team2 },
 } = game;
 console.log(team1, draw, team2);
+//6.
+const printGoals = function (...players) {
+    console.log(players);
+    console.log(`${players.length} goals were scored`);
+};
+printGoals(...game.scored);
