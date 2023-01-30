@@ -14,3 +14,12 @@ const gameEvents = new Map([
 //1.
 const events = [...new Set(gameEvents.values())];
 console.log(events);
+//2.
+gameEvents.delete(64);
+//3.
+console.log(
+    `An envent happened, on average, every ${90 / gameEvents.size}minutes`);
+const time = [...gameEvents.keys()].pop();
+console.log(time);
+console.log(
+    `An event happened, on average, every ${time / gameEvents.size}minutes`);
