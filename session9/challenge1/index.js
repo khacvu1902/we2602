@@ -46,3 +46,6 @@ console.log(player1, player2);
 //2.
 const [gk, ...fieldPlayers] = player1;
 console.log(gk, fieldPlayers);
+//3. 
+const allPlayers = [...player1, ...player2];
+console.log(allPlayers);
