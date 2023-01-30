@@ -1,5 +1,5 @@
 // Dom
-const app = document.querySelector('#app');
+// const app = document.querySelector('#app');
 const game = {
     team1: 'Bayern Munich',
     team2: 'Borrussia Dortmund',
@@ -40,3 +40,6 @@ const game = {
         team2: 6.5,
     },
 };
+//1.
+const [player1, player2] = game.players;
+console.log(player1, player2);
